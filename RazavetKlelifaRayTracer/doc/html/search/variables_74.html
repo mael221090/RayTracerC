@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_tgle">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="../structliste_triangle.html#a7dab36ef1c0c7857351043cbd4fc8e10" target="_parent">tgle</a>
+  <span class="SRScope">listeTriangle</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_tore">
+ <div class="SREntry">
+  <a id="Item1" onkeydown="return searchResults.Nav(event,1)" onkeypress="return searchResults.Nav(event,1)" onkeyup="return searchResults.Nav(event,1)" class="SRSymbol" href="../structliste_torus.html#a557c6aba3fcd512af3b30630912bd5c9" target="_parent">tore</a>
+  <span class="SRScope">listeTorus</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_toreplusproche">
+ <div class="SREntry">
+  <a id="Item2" onkeydown="return searchResults.Nav(event,2)" onkeypress="return searchResults.Nav(event,2)" onkeyup="return searchResults.Nav(event,2)" class="SRSymbol" href="../structobjet_plus_proche.html#a76825c18c7b4ffdfeab81f867ff1267e" target="_parent">torePlusProche</a>
+  <span class="SRScope">objetPlusProche</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_triangleplusproche">
+ <div class="SREntry">
+  <a id="Item3" onkeydown="return searchResults.Nav(event,3)" onkeypress="return searchResults.Nav(event,3)" onkeyup="return searchResults.Nav(event,3)" class="SRSymbol" href="../structobjet_plus_proche.html#a41e5fb34eca76ab29fb646b4bfbd25ef" target="_parent">trianglePlusProche</a>
+  <span class="SRScope">objetPlusProche</span>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

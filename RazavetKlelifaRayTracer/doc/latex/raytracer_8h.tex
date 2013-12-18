@@ -1,0 +1,71 @@
+\hypertarget{raytracer_8h}{
+\section{src/raytracer.h File Reference}
+\label{raytracer_8h}\index{src/raytracer.h@{src/raytracer.h}}
+}
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}mappage.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}sphere.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}plan.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}camera.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}LectureFichier.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}lumiere.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}triangle.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}cylindre.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}cube.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}cone.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}tore.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}objet.h\char`\"{}}\par
+{\ttfamily \#include $<$values.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{raytracer_8h_ac0f2228420376f4db7e1274f2b41667c}{main} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em main, fonction qui lance le programme \item\end{DoxyCompactList}\item 
+void \hyperlink{raytracer_8h_a71778d6081feb60fab75cf651cea1a1d}{envoieRayon} (int x, int y, \hyperlink{structobjet}{objet} obj, \hyperlink{structobjet_c_s_g}{objetCSG} objetcsg, \hyperlink{structliste_intersection}{listeIntersection} lIntersection)
+\begin{DoxyCompactList}\small\item\em fonction qui gère l'envoie des rayons \item\end{DoxyCompactList}\item 
+int \hyperlink{raytracer_8h_a415c77dc30c5c516e888e5ad8b4c3cde}{objetLePlusProche} (\hyperlink{structobjet}{objet} obj, \hyperlink{structvecteur}{vecteur} $\ast$plusProcheIntersection, \hyperlink{structobjet_plus_proche}{objetPlusProche} $\ast$objetProche, \hyperlink{structrayon}{rayon} ray, \hyperlink{structobjet_c_s_g}{objetCSG} objetcsg, \hyperlink{structliste_intersection}{listeIntersection} lIntersection)
+\begin{DoxyCompactList}\small\item\em fonction qui calcul l'objet le plus proche du rayon \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{raytracer_8h_a71778d6081feb60fab75cf651cea1a1d}{
+\index{raytracer.h@{raytracer.h}!envoieRayon@{envoieRayon}}
+\index{envoieRayon@{envoieRayon}!raytracer.h@{raytracer.h}}
+\subsubsection[{envoieRayon}]{\setlength{\rightskip}{0pt plus 5cm}void envoieRayon (int {\em x}, \/  int {\em y}, \/  {\bf objet} {\em obj}, \/  {\bf objetCSG} {\em objetcsg}, \/  {\bf listeIntersection} {\em lIntersection})}}
+\label{raytracer_8h_a71778d6081feb60fab75cf651cea1a1d}
+
+
+fonction qui gère l'envoie des rayons 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]: resolution de l'ecran en largeur \item[{\em y}]: resolution de l'ecran en hauteur \item[{\em obj}]: la structure contenant les objets que contient la scène \item[{\em objetcsg}]: structure contenant les objets ayant une csg définie \item[{\em lIntersection,:}]ma liste d'intersection contenant les primitives \end{DoxyParams}
+\hypertarget{raytracer_8h_ac0f2228420376f4db7e1274f2b41667c}{
+\index{raytracer.h@{raytracer.h}!main@{main}}
+\index{main@{main}!raytracer.h@{raytracer.h}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (int {\em argc}, \/  const char $\ast$ {\em argv}\mbox{[}$\,$\mbox{]})}}
+\label{raytracer_8h_ac0f2228420376f4db7e1274f2b41667c}
+
+
+main, fonction qui lance le programme 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em argc}]\item[{\em argv}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la bonne execution du programme 
+\end{DoxyReturn}
+\hypertarget{raytracer_8h_a415c77dc30c5c516e888e5ad8b4c3cde}{
+\index{raytracer.h@{raytracer.h}!objetLePlusProche@{objetLePlusProche}}
+\index{objetLePlusProche@{objetLePlusProche}!raytracer.h@{raytracer.h}}
+\subsubsection[{objetLePlusProche}]{\setlength{\rightskip}{0pt plus 5cm}int objetLePlusProche ({\bf objet} {\em obj}, \/  {\bf vecteur} $\ast$ {\em plusProcheIntersection}, \/  {\bf objetPlusProche} $\ast$ {\em objetProche}, \/  {\bf rayon} {\em ray}, \/  {\bf objetCSG} {\em objetcsg}, \/  {\bf listeIntersection} {\em lIntersection})}}
+\label{raytracer_8h_a415c77dc30c5c516e888e5ad8b4c3cde}
+
+
+fonction qui calcul l'objet le plus proche du rayon 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj}]: structure contenant tout les objets de la scène \item[{\em plusProcheIntersection}]: la plus proche intersection \item[{\em objetProche}]: structure contenant tout les objets les plus proches du rayon \item[{\em ray}]: le rayon envoyé \item[{\em objetcsg,:}]la structure d'objets possédant une csg de définie \item[{\em lIntersection,:}]ma liste d'intersection contenant les primitives \end{DoxyParams}

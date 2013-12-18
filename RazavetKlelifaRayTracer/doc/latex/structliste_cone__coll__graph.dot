@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="listeCone",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="suivant"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="cone1"];
+  Node2 [label="cone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structcone.html",tooltip="structure définissant un cone"];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="coordonneeExtremite1\ncoordonneeExtremite2\npigment"];
+  Node3 [label="vecteur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvecteur.html",tooltip="structure définissant un vecteur de taille 3"];
+}

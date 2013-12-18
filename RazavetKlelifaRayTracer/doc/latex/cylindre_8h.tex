@@ -1,0 +1,32 @@
+\hypertarget{cylindre_8h}{
+\section{src/cylindre.h File Reference}
+\label{cylindre_8h}\index{src/cylindre.h@{src/cylindre.h}}
+}
+{\ttfamily \#include \char`\"{}LectureFichier.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}rayon.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}vecteur.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}plan.h\char`\"{}}\par
+{\ttfamily \#include $<$math.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cylindre_8h_aa505e8d75b4d37b4b6f232d3c94c8a48}{intersectCylindre} (\hyperlink{structrayon}{rayon} ray, \hyperlink{structcylinder}{cylinder} cylindre, float $\ast$t, \hyperlink{structvecteur}{vecteur} $\ast$intersection, \hyperlink{structvecteur}{vecteur} $\ast$normale)
+\begin{DoxyCompactList}\small\item\em calcul de l'intersection entre un cylindre et le rayon \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{cylindre_8h_aa505e8d75b4d37b4b6f232d3c94c8a48}{
+\index{cylindre.h@{cylindre.h}!intersectCylindre@{intersectCylindre}}
+\index{intersectCylindre@{intersectCylindre}!cylindre.h@{cylindre.h}}
+\subsubsection[{intersectCylindre}]{\setlength{\rightskip}{0pt plus 5cm}int intersectCylindre ({\bf rayon} {\em ray}, \/  {\bf cylinder} {\em cylindre}, \/  float $\ast$ {\em t}, \/  {\bf vecteur} $\ast$ {\em intersection}, \/  {\bf vecteur} $\ast$ {\em normale})}}
+\label{cylindre_8h_aa505e8d75b4d37b4b6f232d3c94c8a48}
+
+
+calcul de l'intersection entre un cylindre et le rayon 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ray}]:le rayon lancer \item[{\em cylindre}]: le cylindre courant \item[{\em t}]: le paramètre du rayon calculé \item[{\em intersection}]: l'intersection entre le cylindre et le rayon \item[{\em normale}]: la normale au cylindre \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+booleen indiquant si il y a eu intersection 
+\end{DoxyReturn}

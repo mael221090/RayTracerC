@@ -1,0 +1,37 @@
+\hypertarget{mappage_8c}{
+\section{src/mappage.c File Reference}
+\label{mappage_8c}\index{src/mappage.c@{src/mappage.c}}
+}
+{\ttfamily \#include \char`\"{}mappage.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}LectureFichier.h\char`\"{}}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$fcntl.h$>$}\par
+{\ttfamily \#include $<$sys/stat.h$>$}\par
+{\ttfamily \#include $<$sys/types.h$>$}\par
+{\ttfamily \#include $<$unistd.h$>$}\par
+{\ttfamily \#include $<$sys/mman.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{mappage_8c_a61e88ae50237f381ee41870e3510d18e}{ouvre} (char $\ast$chemin\_\-fichier, int x, int y, \hyperlink{structobjet}{objet} $\ast$obj, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg, \hyperlink{structliste_intersection}{listeIntersection} $\ast$lIntersection)
+\begin{DoxyCompactList}\small\item\em fonction qui gère l'envoie des rayons \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{mappage_8c_a61e88ae50237f381ee41870e3510d18e}{
+\index{mappage.c@{mappage.c}!ouvre@{ouvre}}
+\index{ouvre@{ouvre}!mappage.c@{mappage.c}}
+\subsubsection[{ouvre}]{\setlength{\rightskip}{0pt plus 5cm}int ouvre (char $\ast$ {\em chemin\_\-fichier}, \/  int {\em x}, \/  int {\em y}, \/  {\bf objet} $\ast$ {\em obj}, \/  {\bf objetCSG} $\ast$ {\em objetcsg}, \/  {\bf listeIntersection} $\ast$ {\em lIntersection})}}
+\label{mappage_8c_a61e88ae50237f381ee41870e3510d18e}
+
+
+fonction qui gère l'envoie des rayons 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em chemin\_\-fichier,:}]le chemin du fichier à mapper \item[{\em x}]: resolution de l'ecran en largeur \item[{\em y}]: resolution de l'ecran en hauteur \item[{\em obj}]: la structure contenant les objets que contient la scène \item[{\em objetcsg}]: structure contenant les objets ayant une csg définie \item[{\em lIntersection,:}]liste dintersection \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+EXIT\_\-SUCCESS 
+\end{DoxyReturn}

@@ -1,0 +1,45 @@
+\hypertarget{triangle_8c}{
+\section{src/triangle.c File Reference}
+\label{triangle_8c}\index{src/triangle.c@{src/triangle.c}}
+}
+{\ttfamily \#include \char`\"{}triangle.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{triangle_8c_aad2e7ec10b74689633b920bd0041893b}{intersectTriangle} (\hyperlink{structrayon}{rayon} ray, \hyperlink{structtriangle}{triangle} tgle, float $\ast$t, \hyperlink{structvecteur}{vecteur} $\ast$intersection, int \hyperlink{structtriangle}{triangle}, \hyperlink{structvecteur}{vecteur} $\ast$normale)
+\begin{DoxyCompactList}\small\item\em fonction qui calcule le point dintersection entre le triangle et le rayon \item\end{DoxyCompactList}\item 
+\hyperlink{structtriangle}{triangle} \hyperlink{triangle_8c_a99f348d216825233ce9311b75fa7bb7a}{newTriangle} (\hyperlink{structvecteur}{vecteur} coin1, \hyperlink{structvecteur}{vecteur} coin2, \hyperlink{structvecteur}{vecteur} coin3)
+\begin{DoxyCompactList}\small\item\em fonction qui creer un nouveau triangle \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{triangle_8c_aad2e7ec10b74689633b920bd0041893b}{
+\index{triangle.c@{triangle.c}!intersectTriangle@{intersectTriangle}}
+\index{intersectTriangle@{intersectTriangle}!triangle.c@{triangle.c}}
+\subsubsection[{intersectTriangle}]{\setlength{\rightskip}{0pt plus 5cm}int intersectTriangle ({\bf rayon} {\em ray}, \/  {\bf triangle} {\em tgle}, \/  float $\ast$ {\em t}, \/  {\bf vecteur} $\ast$ {\em intersection}, \/  int {\em triangle}, \/  {\bf vecteur} $\ast$ {\em normale})}}
+\label{triangle_8c_aad2e7ec10b74689633b920bd0041893b}
+
+
+fonction qui calcule le point dintersection entre le triangle et le rayon 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ray}]: le rayon lancer \item[{\em tgle}]: le triangle courant \item[{\em t}]: distance entre triangle et origine du rayon \item[{\em intersection}]: point d'intersection entre le tore et le rayon \item[{\em triangle}]: booleen indiquant si on calcul l'intersection d'un triangle ou d'un cube \item[{\em normale}]: la normale au cylindre \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+booleen indiquant si il y a eu intersection 
+\end{DoxyReturn}
+\hypertarget{triangle_8c_a99f348d216825233ce9311b75fa7bb7a}{
+\index{triangle.c@{triangle.c}!newTriangle@{newTriangle}}
+\index{newTriangle@{newTriangle}!triangle.c@{triangle.c}}
+\subsubsection[{newTriangle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf triangle} newTriangle ({\bf vecteur} {\em coin1}, \/  {\bf vecteur} {\em coin2}, \/  {\bf vecteur} {\em coin3})}}
+\label{triangle_8c_a99f348d216825233ce9311b75fa7bb7a}
+
+
+fonction qui creer un nouveau triangle 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em coin1}]: coordonnee du premier point du triangle \item[{\em coin2}]: coordonnee du deuxieme point du triangle \item[{\em coin3}]: coordonnee du troisieme point du triangle \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le nouveau triangle creer 
+\end{DoxyReturn}

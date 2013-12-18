@@ -1,0 +1,34 @@
+\hypertarget{cone_8c}{
+\section{src/cone.c File Reference}
+\label{cone_8c}\index{src/cone.c@{src/cone.c}}
+}
+{\ttfamily \#include \char`\"{}cone.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}LectureFichier.h\char`\"{}}\par
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}camera.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}vecteur.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cone_8c_af896f25c94fa5dc3df26036749709383}{intersectCone} (\hyperlink{structrayon}{rayon} ray, \hyperlink{structcone}{cone} con, float $\ast$t, \hyperlink{structvecteur}{vecteur} $\ast$intersection)
+\begin{DoxyCompactList}\small\item\em calcul de l'intersection entre un cone et le rayon \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{cone_8c_af896f25c94fa5dc3df26036749709383}{
+\index{cone.c@{cone.c}!intersectCone@{intersectCone}}
+\index{intersectCone@{intersectCone}!cone.c@{cone.c}}
+\subsubsection[{intersectCone}]{\setlength{\rightskip}{0pt plus 5cm}double int intersectCone ({\bf rayon} {\em ray}, \/  {\bf cone} {\em con}, \/  float $\ast$ {\em t}, \/  {\bf vecteur} $\ast$ {\em intersection})}}
+\label{cone_8c_af896f25c94fa5dc3df26036749709383}
+
+
+calcul de l'intersection entre un cone et le rayon 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ray}]:le rayon lancer \item[{\em con,:}]le cone courant \item[{\em t}]: le paramètre du rayon calculé \item[{\em intersection}]: l'intersection entre le cone et le rayon \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+booleen indiquant si il y a eu intersection 
+\end{DoxyReturn}

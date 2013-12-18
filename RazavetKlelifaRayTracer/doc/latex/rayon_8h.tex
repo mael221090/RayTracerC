@@ -1,0 +1,54 @@
+\hypertarget{rayon_8h}{
+\section{src/rayon.h File Reference}
+\label{rayon_8h}\index{src/rayon.h@{src/rayon.h}}
+}
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}camera.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}vecteur.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structrayon}{rayon}
+\begin{DoxyCompactList}\small\item\em composants d'un rayon \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structrayon}{rayon} \hyperlink{rayon_8h_afe397213734df07d96077f58ee789406}{creerRayon} (\hyperlink{structvecteur}{vecteur} origine, \hyperlink{structvecteur}{vecteur} vectDir)
+\begin{DoxyCompactList}\small\item\em fonction de création d'un rayon \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{rayon_8h_ade01b0158d28cd280f14da140daec12f}{calculvecDirRayon} (int x, int y, int xRes, int yRes, \hyperlink{structcamera__new}{camera\_\-new} cam)
+\begin{DoxyCompactList}\small\item\em fonction qui calcul le vecteur directeur du rayon \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{rayon_8h_ade01b0158d28cd280f14da140daec12f}{
+\index{rayon.h@{rayon.h}!calculvecDirRayon@{calculvecDirRayon}}
+\index{calculvecDirRayon@{calculvecDirRayon}!rayon.h@{rayon.h}}
+\subsubsection[{calculvecDirRayon}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} calculvecDirRayon (int {\em x}, \/  int {\em y}, \/  int {\em xRes}, \/  int {\em yRes}, \/  {\bf camera\_\-new} {\em cam})}}
+\label{rayon_8h_ade01b0158d28cd280f14da140daec12f}
+
+
+fonction qui calcul le vecteur directeur du rayon 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]: numero du pixel en largeur \item[{\em y}]: numero du pixel en hauteur \item[{\em xRes}]: resolution rentrer par l'utilisateur ou celle par défaut en largeur \item[{\em yRes}]: resolution rentrer par l'utilisateur ou celle par défaut en hauteur \item[{\em cam}]: camera avec viewPlane intégré \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vecteur directeur du rayon 
+\end{DoxyReturn}
+\hypertarget{rayon_8h_afe397213734df07d96077f58ee789406}{
+\index{rayon.h@{rayon.h}!creerRayon@{creerRayon}}
+\index{creerRayon@{creerRayon}!rayon.h@{rayon.h}}
+\subsubsection[{creerRayon}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rayon} creerRayon ({\bf vecteur} {\em origine}, \/  {\bf vecteur} {\em vectDir})}}
+\label{rayon_8h_afe397213734df07d96077f58ee789406}
+
+
+fonction de création d'un rayon 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em origine}]: l'origine du rayon \item[{\em vectDir}]: le vecteur directeur du rayon \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le nouveau rayon creer 
+\end{DoxyReturn}

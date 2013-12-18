@@ -1,0 +1,90 @@
+\hypertarget{structcone}{
+\section{cone Struct Reference}
+\label{structcone}\index{cone@{cone}}
+}
+
+
+structure définissant un cone  
+
+
+
+
+{\ttfamily \#include $<$LectureFichier.h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{structcone_afb2be5d3ea17eb45de040c4ab9f15a38}{coordonneeExtremite1}
+\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{structcone_aa1d3b217682ad932e6211bfb18ebb259}{coordonneeExtremite2}
+\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{structcone_a5a4ee24431a1811fa1c8b75844198987}{pigment}
+\item 
+float \hyperlink{structcone_a1b8e70708fd2b25f83f0aacadbe0ddbd}{rayon1}
+\item 
+float \hyperlink{structcone_a8630bec8bf19ad824e1527744e48178e}{rayon2}
+\item 
+double $\ast$$\ast$ \hyperlink{structcone_aa06ccc348007e3355beccf412f2f656c}{matriceTransfo}
+\item 
+double $\ast$$\ast$ \hyperlink{structcone_acd7a3590501dcccfaefccbb658f83821}{matriceTransfoInverse}
+\item 
+int \hyperlink{structcone_a4428e32d4383f7dee25e5a4cb192da24}{booleenCSG}
+\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{structcone_a944738f40a0294270a0047acc5a77ee2}{normale}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+structure définissant un cone 
+
+\subsection{Field Documentation}
+\hypertarget{structcone_a4428e32d4383f7dee25e5a4cb192da24}{
+\index{cone@{cone}!booleenCSG@{booleenCSG}}
+\index{booleenCSG@{booleenCSG}!cone@{cone}}
+\subsubsection[{booleenCSG}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf booleenCSG}}}
+\label{structcone_a4428e32d4383f7dee25e5a4cb192da24}
+int booleenCSG pour définir si il y a une csg et laquelle c'est \hypertarget{structcone_afb2be5d3ea17eb45de040c4ab9f15a38}{
+\index{cone@{cone}!coordonneeExtremite1@{coordonneeExtremite1}}
+\index{coordonneeExtremite1@{coordonneeExtremite1}!cone@{cone}}
+\subsubsection[{coordonneeExtremite1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} {\bf coordonneeExtremite1}}}
+\label{structcone_afb2be5d3ea17eb45de040c4ab9f15a38}
+struct vecteur d'indiquant la coordonnee de la premiere extremité du cone \hypertarget{structcone_aa1d3b217682ad932e6211bfb18ebb259}{
+\index{cone@{cone}!coordonneeExtremite2@{coordonneeExtremite2}}
+\index{coordonneeExtremite2@{coordonneeExtremite2}!cone@{cone}}
+\subsubsection[{coordonneeExtremite2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} {\bf coordonneeExtremite2}}}
+\label{structcone_aa1d3b217682ad932e6211bfb18ebb259}
+struct vecteur d'indiquant la coordonnee de la deuxieme extremité du cone \hypertarget{structcone_aa06ccc348007e3355beccf412f2f656c}{
+\index{cone@{cone}!matriceTransfo@{matriceTransfo}}
+\index{matriceTransfo@{matriceTransfo}!cone@{cone}}
+\subsubsection[{matriceTransfo}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ {\bf matriceTransfo}}}
+\label{structcone_aa06ccc348007e3355beccf412f2f656c}
+struct matrice de transformation \hypertarget{structcone_acd7a3590501dcccfaefccbb658f83821}{
+\index{cone@{cone}!matriceTransfoInverse@{matriceTransfoInverse}}
+\index{matriceTransfoInverse@{matriceTransfoInverse}!cone@{cone}}
+\subsubsection[{matriceTransfoInverse}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ {\bf matriceTransfoInverse}}}
+\label{structcone_acd7a3590501dcccfaefccbb658f83821}
+struct matrice de transformation inverse \hypertarget{structcone_a944738f40a0294270a0047acc5a77ee2}{
+\index{cone@{cone}!normale@{normale}}
+\index{normale@{normale}!cone@{cone}}
+\subsubsection[{normale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} {\bf normale}}}
+\label{structcone_a944738f40a0294270a0047acc5a77ee2}
+struct normale a la face intersecter \hypertarget{structcone_a5a4ee24431a1811fa1c8b75844198987}{
+\index{cone@{cone}!pigment@{pigment}}
+\index{pigment@{pigment}!cone@{cone}}
+\subsubsection[{pigment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} {\bf pigment}}}
+\label{structcone_a5a4ee24431a1811fa1c8b75844198987}
+struct vecteur indiquant la couleur du cone \hypertarget{structcone_a1b8e70708fd2b25f83f0aacadbe0ddbd}{
+\index{cone@{cone}!rayon1@{rayon1}}
+\index{rayon1@{rayon1}!cone@{cone}}
+\subsubsection[{rayon1}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf rayon1}}}
+\label{structcone_a1b8e70708fd2b25f83f0aacadbe0ddbd}
+struct premier rayon du cone \hypertarget{structcone_a8630bec8bf19ad824e1527744e48178e}{
+\index{cone@{cone}!rayon2@{rayon2}}
+\index{rayon2@{rayon2}!cone@{cone}}
+\subsubsection[{rayon2}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf rayon2}}}
+\label{structcone_a8630bec8bf19ad824e1527744e48178e}
+struct deuxieme rayon du cone 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_lecture_fichier_8h}{LectureFichier.h}\end{DoxyCompactItemize}

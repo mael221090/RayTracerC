@@ -1,0 +1,300 @@
+\hypertarget{vecteur_8c}{
+\section{src/vecteur.c File Reference}
+\label{vecteur_8c}\index{src/vecteur.c@{src/vecteur.c}}
+}
+{\ttfamily \#include \char`\"{}vecteur.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{vecteur_8c_ae30bc9d0c3127a1e51ae04b2d9513b4c}{vector} (float a, float b, float c)
+\begin{DoxyCompactList}\small\item\em fonction de création d'un vecteur de taille 3 \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur4}{vecteur4} \hyperlink{vecteur_8c_ab2daaad041457f24a748a32b826c4030}{vector4} (float a, float b, float c, float d)
+\begin{DoxyCompactList}\small\item\em fonction de création d'un vecteur de taille 4 \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{vecteur_8c_ab75c92de6307c8671db401429fa9ba67}{normaliser} (\hyperlink{structvecteur}{vecteur} v)
+\begin{DoxyCompactList}\small\item\em fonction permettant de normaliser un vecteur de taille 3 \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{vecteur_8c_a1b4d3fd0063e5a0be3b89b8904d0e86d}{opMoins} (\hyperlink{structvecteur}{vecteur} tmp1, \hyperlink{structvecteur}{vecteur} tmp2)
+\begin{DoxyCompactList}\small\item\em fonction permettant de soustraire deux vecteurs de taille 3 \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{vecteur_8c_abe3e639300568d9fa9f32ed794a9fe9a}{opProduitVectorielle} (\hyperlink{structvecteur}{vecteur} tmp1, \hyperlink{structvecteur}{vecteur} tmp2)
+\begin{DoxyCompactList}\small\item\em fonction permettant de faire le produit vectorielle entre deux vecteurs de taille 3 \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{vecteur_8c_abb70ab1e852f9d30c463e0a1455dee07}{opProduit} (\hyperlink{structvecteur}{vecteur} tmp1, \hyperlink{structvecteur}{vecteur} tmp2)
+\begin{DoxyCompactList}\small\item\em fonction permettant de multiplier deux vecteurs de taille 3 entre eux \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{vecteur_8c_a9005861c08d886432836e7bbbe270189}{diviseVecteur} (\hyperlink{structvecteur}{vecteur} tmp1, \hyperlink{structvecteur}{vecteur} tmp2)
+\begin{DoxyCompactList}\small\item\em fonction permettant de faire la division de deux vecteurs \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{vecteur_8c_a41be8439df26c37173bbf2367c4862a7}{opPlus} (\hyperlink{structvecteur}{vecteur} tmp1, \hyperlink{structvecteur}{vecteur} tmp2)
+\begin{DoxyCompactList}\small\item\em fonction permettant d'additionner deux vecteurs de taille 3 \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur4}{vecteur4} \hyperlink{vecteur_8c_a5e0fb3bd156f44e80dbd1f1b0f0934f1}{opPlus4} (\hyperlink{structvecteur4}{vecteur4} tmp1, \hyperlink{structvecteur4}{vecteur4} tmp2)
+\begin{DoxyCompactList}\small\item\em fonction permettant d'additionner deux vecteurs de taille 4 \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{vecteur_8c_a3f798698953f3e6c5954496ca0d180ef}{opPlusVecteurScalaire} (\hyperlink{structvecteur}{vecteur} tmp1, float k)
+\begin{DoxyCompactList}\small\item\em fonction permettant de diviser par un nombre un vecteur de taille 3 \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{vecteur_8c_a640ff4557052f1f662476da153a4fba8}{opDivise} (\hyperlink{structvecteur}{vecteur} tmp1, float k)
+\begin{DoxyCompactList}\small\item\em fonction permettant de diviser par un nombre un vecteur de taille 3 \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{vecteur_8c_ae95c46da14eeb16ed64a897fa2a0ab67}{opProduitScalaire} (\hyperlink{structvecteur}{vecteur} tmp, float k)
+\begin{DoxyCompactList}\small\item\em fonction permettant de multiplier un nombre a un vecteur de taille 3 \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur4}{vecteur4} \hyperlink{vecteur_8c_acb892b2370966bdef8f599d8aabec452}{opProduitScalaire4} (\hyperlink{structvecteur4}{vecteur4} tmp, float k)
+\begin{DoxyCompactList}\small\item\em fonction permettant de multiplier un nombre a un vecteur de taille 4 \item\end{DoxyCompactList}\item 
+float \hyperlink{vecteur_8c_a3992269b294937fb3b739db57c433704}{calculDistance} (\hyperlink{structvecteur}{vecteur} A, \hyperlink{structvecteur}{vecteur} B)
+\begin{DoxyCompactList}\small\item\em fonction permettant de calculer la distance entre deux vecteurs de taille 3 \item\end{DoxyCompactList}\item 
+float \hyperlink{vecteur_8c_a4ab88b3aec3aae99c8570ad9502e079c}{calculDistancePoint} (\hyperlink{structvecteur}{vecteur} A, \hyperlink{structvecteur}{vecteur} B)
+\begin{DoxyCompactList}\small\item\em fonction permettant de calculer la distance entre deux points \item\end{DoxyCompactList}\item 
+int \hyperlink{vecteur_8c_aab41794f2ff23c554b03479b3d20d893}{compareVecteur} (\hyperlink{structvecteur}{vecteur} A, \hyperlink{structvecteur}{vecteur} B)
+\begin{DoxyCompactList}\small\item\em fonction permettant de comparer deux vecteurs de taille 3 \item\end{DoxyCompactList}\item 
+float \hyperlink{vecteur_8c_a7c60921099e74b60fb2bc81df79d7919}{dot} (\hyperlink{structvecteur}{vecteur} A, \hyperlink{structvecteur}{vecteur} B)
+\begin{DoxyCompactList}\small\item\em fonction permettant de calculer le produit scalaire entre deux vecteur de taille 3 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{vecteur_8c_a3992269b294937fb3b739db57c433704}{
+\index{vecteur.c@{vecteur.c}!calculDistance@{calculDistance}}
+\index{calculDistance@{calculDistance}!vecteur.c@{vecteur.c}}
+\subsubsection[{calculDistance}]{\setlength{\rightskip}{0pt plus 5cm}float calculDistance ({\bf vecteur} {\em A}, \/  {\bf vecteur} {\em B})}}
+\label{vecteur_8c_a3992269b294937fb3b739db57c433704}
+
+
+fonction permettant de calculer la distance entre deux vecteurs de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em A}]: vecteur de taille 3 \item[{\em B}]: vecteur de taille 3 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la distance 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_a4ab88b3aec3aae99c8570ad9502e079c}{
+\index{vecteur.c@{vecteur.c}!calculDistancePoint@{calculDistancePoint}}
+\index{calculDistancePoint@{calculDistancePoint}!vecteur.c@{vecteur.c}}
+\subsubsection[{calculDistancePoint}]{\setlength{\rightskip}{0pt plus 5cm}float calculDistancePoint ({\bf vecteur} {\em A}, \/  {\bf vecteur} {\em B})}}
+\label{vecteur_8c_a4ab88b3aec3aae99c8570ad9502e079c}
+
+
+fonction permettant de calculer la distance entre deux points 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em A}]: vecteur de taille 3 \item[{\em B}]: vecteur de taille 3 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la distance 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_aab41794f2ff23c554b03479b3d20d893}{
+\index{vecteur.c@{vecteur.c}!compareVecteur@{compareVecteur}}
+\index{compareVecteur@{compareVecteur}!vecteur.c@{vecteur.c}}
+\subsubsection[{compareVecteur}]{\setlength{\rightskip}{0pt plus 5cm}int compareVecteur ({\bf vecteur} {\em A}, \/  {\bf vecteur} {\em B})}}
+\label{vecteur_8c_aab41794f2ff23c554b03479b3d20d893}
+
+
+fonction permettant de comparer deux vecteurs de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em A}]: vecteur de taille 3 \item[{\em B}]: vecteur de taille 3 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si ils sont egaux, 0 sinon 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_a9005861c08d886432836e7bbbe270189}{
+\index{vecteur.c@{vecteur.c}!diviseVecteur@{diviseVecteur}}
+\index{diviseVecteur@{diviseVecteur}!vecteur.c@{vecteur.c}}
+\subsubsection[{diviseVecteur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} diviseVecteur ({\bf vecteur} {\em tmp1}, \/  {\bf vecteur} {\em tmp2})}}
+\label{vecteur_8c_a9005861c08d886432836e7bbbe270189}
+
+
+fonction permettant de faire la division de deux vecteurs 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tmp1}]: vecteur de taille 3 \item[{\em tmp2}]: vecteur de taille 3 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_a7c60921099e74b60fb2bc81df79d7919}{
+\index{vecteur.c@{vecteur.c}!dot@{dot}}
+\index{dot@{dot}!vecteur.c@{vecteur.c}}
+\subsubsection[{dot}]{\setlength{\rightskip}{0pt plus 5cm}float dot ({\bf vecteur} {\em A}, \/  {\bf vecteur} {\em B})}}
+\label{vecteur_8c_a7c60921099e74b60fb2bc81df79d7919}
+
+
+fonction permettant de calculer le produit scalaire entre deux vecteur de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em A}]: vecteur de taille 3 \item[{\em B}]: vecteur de taille 3 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le nombre résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_ab75c92de6307c8671db401429fa9ba67}{
+\index{vecteur.c@{vecteur.c}!normaliser@{normaliser}}
+\index{normaliser@{normaliser}!vecteur.c@{vecteur.c}}
+\subsubsection[{normaliser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} normaliser ({\bf vecteur} {\em v})}}
+\label{vecteur_8c_ab75c92de6307c8671db401429fa9ba67}
+
+
+fonction permettant de normaliser un vecteur de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em v}]: vecteur de taille 3 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur normaliser 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_a640ff4557052f1f662476da153a4fba8}{
+\index{vecteur.c@{vecteur.c}!opDivise@{opDivise}}
+\index{opDivise@{opDivise}!vecteur.c@{vecteur.c}}
+\subsubsection[{opDivise}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} opDivise ({\bf vecteur} {\em tmp1}, \/  float {\em k})}}
+\label{vecteur_8c_a640ff4557052f1f662476da153a4fba8}
+
+
+fonction permettant de diviser par un nombre un vecteur de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tmp1}]: vecteur de taille 3 \item[{\em k}]: nombre a multiplier \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_a1b4d3fd0063e5a0be3b89b8904d0e86d}{
+\index{vecteur.c@{vecteur.c}!opMoins@{opMoins}}
+\index{opMoins@{opMoins}!vecteur.c@{vecteur.c}}
+\subsubsection[{opMoins}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} opMoins ({\bf vecteur} {\em tmp1}, \/  {\bf vecteur} {\em tmp2})}}
+\label{vecteur_8c_a1b4d3fd0063e5a0be3b89b8904d0e86d}
+
+
+fonction permettant de soustraire deux vecteurs de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tmp1}]: vecteur de taille 3 \item[{\em tmp2}]: vecteur de taille 3 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_a41be8439df26c37173bbf2367c4862a7}{
+\index{vecteur.c@{vecteur.c}!opPlus@{opPlus}}
+\index{opPlus@{opPlus}!vecteur.c@{vecteur.c}}
+\subsubsection[{opPlus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} opPlus ({\bf vecteur} {\em tmp1}, \/  {\bf vecteur} {\em tmp2})}}
+\label{vecteur_8c_a41be8439df26c37173bbf2367c4862a7}
+
+
+fonction permettant d'additionner deux vecteurs de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tmp1}]: vecteur de taille 3 \item[{\em tmp2}]: vecteur de taille 3 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_a5e0fb3bd156f44e80dbd1f1b0f0934f1}{
+\index{vecteur.c@{vecteur.c}!opPlus4@{opPlus4}}
+\index{opPlus4@{opPlus4}!vecteur.c@{vecteur.c}}
+\subsubsection[{opPlus4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur4} opPlus4 ({\bf vecteur4} {\em tmp1}, \/  {\bf vecteur4} {\em tmp2})}}
+\label{vecteur_8c_a5e0fb3bd156f44e80dbd1f1b0f0934f1}
+
+
+fonction permettant d'additionner deux vecteurs de taille 4 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tmp1}]: vecteur de taille 4 \item[{\em tmp2}]: vecteur de taille 4 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_a3f798698953f3e6c5954496ca0d180ef}{
+\index{vecteur.c@{vecteur.c}!opPlusVecteurScalaire@{opPlusVecteurScalaire}}
+\index{opPlusVecteurScalaire@{opPlusVecteurScalaire}!vecteur.c@{vecteur.c}}
+\subsubsection[{opPlusVecteurScalaire}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} opPlusVecteurScalaire ({\bf vecteur} {\em tmp1}, \/  float {\em k})}}
+\label{vecteur_8c_a3f798698953f3e6c5954496ca0d180ef}
+
+
+fonction permettant de diviser par un nombre un vecteur de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tmp1}]: vecteur de taille 3 \item[{\em k}]: nombre a additionner \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_abb70ab1e852f9d30c463e0a1455dee07}{
+\index{vecteur.c@{vecteur.c}!opProduit@{opProduit}}
+\index{opProduit@{opProduit}!vecteur.c@{vecteur.c}}
+\subsubsection[{opProduit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} opProduit ({\bf vecteur} {\em tmp1}, \/  {\bf vecteur} {\em tmp2})}}
+\label{vecteur_8c_abb70ab1e852f9d30c463e0a1455dee07}
+
+
+fonction permettant de multiplier deux vecteurs de taille 3 entre eux 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tmp1}]: vecteur de taille 3 \item[{\em tmp2}]: vecteur de taille 3 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_ae95c46da14eeb16ed64a897fa2a0ab67}{
+\index{vecteur.c@{vecteur.c}!opProduitScalaire@{opProduitScalaire}}
+\index{opProduitScalaire@{opProduitScalaire}!vecteur.c@{vecteur.c}}
+\subsubsection[{opProduitScalaire}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} opProduitScalaire ({\bf vecteur} {\em tmp}, \/  float {\em k})}}
+\label{vecteur_8c_ae95c46da14eeb16ed64a897fa2a0ab67}
+
+
+fonction permettant de multiplier un nombre a un vecteur de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tmp}]: vecteur de taille 3 \item[{\em k}]: nombre a multiplier \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_acb892b2370966bdef8f599d8aabec452}{
+\index{vecteur.c@{vecteur.c}!opProduitScalaire4@{opProduitScalaire4}}
+\index{opProduitScalaire4@{opProduitScalaire4}!vecteur.c@{vecteur.c}}
+\subsubsection[{opProduitScalaire4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur4} opProduitScalaire4 ({\bf vecteur4} {\em tmp}, \/  float {\em k})}}
+\label{vecteur_8c_acb892b2370966bdef8f599d8aabec452}
+
+
+fonction permettant de multiplier un nombre a un vecteur de taille 4 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tmp}]: vecteur de taille 4 \item[{\em k}]: nombre a multiplier \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_abe3e639300568d9fa9f32ed794a9fe9a}{
+\index{vecteur.c@{vecteur.c}!opProduitVectorielle@{opProduitVectorielle}}
+\index{opProduitVectorielle@{opProduitVectorielle}!vecteur.c@{vecteur.c}}
+\subsubsection[{opProduitVectorielle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} opProduitVectorielle ({\bf vecteur} {\em tmp1}, \/  {\bf vecteur} {\em tmp2})}}
+\label{vecteur_8c_abe3e639300568d9fa9f32ed794a9fe9a}
+
+
+fonction permettant de faire le produit vectorielle entre deux vecteurs de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tmp1}]: vecteur de taille 3 \item[{\em tmp2}]: vecteur de taille 3 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultat 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_ae30bc9d0c3127a1e51ae04b2d9513b4c}{
+\index{vecteur.c@{vecteur.c}!vector@{vector}}
+\index{vector@{vector}!vecteur.c@{vecteur.c}}
+\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} vector (float {\em a}, \/  float {\em b}, \/  float {\em c})}}
+\label{vecteur_8c_ae30bc9d0c3127a1e51ae04b2d9513b4c}
+
+
+fonction de création d'un vecteur de taille 3 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]: composante en x \item[{\em b}]: composante en y \item[{\em c}]: composante en z \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un vecteur de taille 3 
+\end{DoxyReturn}
+\hypertarget{vecteur_8c_ab2daaad041457f24a748a32b826c4030}{
+\index{vecteur.c@{vecteur.c}!vector4@{vector4}}
+\index{vector4@{vector4}!vecteur.c@{vecteur.c}}
+\subsubsection[{vector4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} vector4 (float {\em a}, \/  float {\em b}, \/  float {\em c}, \/  float {\em d})}}
+\label{vecteur_8c_ab2daaad041457f24a748a32b826c4030}
+
+
+fonction de création d'un vecteur de taille 4 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]: composante en x \item[{\em b}]: composante en y \item[{\em c}]: composante en z \item[{\em d}]: composante en w \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un vecteur de taille 4 
+\end{DoxyReturn}

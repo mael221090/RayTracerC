@@ -1,0 +1,35 @@
+\hypertarget{cube_8h}{
+\section{src/cube.h File Reference}
+\label{cube_8h}\index{src/cube.h@{src/cube.h}}
+}
+{\ttfamily \#include \char`\"{}LectureFichier.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}rayon.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}vecteur.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}triangle.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cube_8h_ac55fecfd4dff31c85beb0ce9491c6644}{intersectCube} (\hyperlink{structrayon}{rayon} ray, \hyperlink{structbox}{box} b, float $\ast$t, \hyperlink{structvecteur}{vecteur} $\ast$intersection, \hyperlink{structvecteur}{vecteur} $\ast$normale)
+\begin{DoxyCompactList}\small\item\em fonction d'intersection entre le cube et rayon \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{cube_8h_ac55fecfd4dff31c85beb0ce9491c6644}{
+\index{cube.h@{cube.h}!intersectCube@{intersectCube}}
+\index{intersectCube@{intersectCube}!cube.h@{cube.h}}
+\subsubsection[{intersectCube}]{\setlength{\rightskip}{0pt plus 5cm}int intersectCube ({\bf rayon} {\em ray}, \/  {\bf box} {\em b}, \/  float $\ast$ {\em t}, \/  {\bf vecteur} $\ast$ {\em intersection}, \/  {\bf vecteur} $\ast$ {\em normale})}}
+\label{cube_8h_ac55fecfd4dff31c85beb0ce9491c6644}
+
+
+fonction d'intersection entre le cube et rayon 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ray}]: le rayon lancer \item[{\em b}]: le cube courant \item[{\em t}]: distance entre le cube et le sol \item[{\em intersection}]: point d'intersection entre le cube et le rayon \item[{\em normale}]: la normale au cube \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+booleen indiquant si il y a eu intersection 
+\end{DoxyReturn}
+
+
+On calcul pour chaque triangle composant le cube, si il y a intersection Puis on regarde quelle intersection et la plus proche
+

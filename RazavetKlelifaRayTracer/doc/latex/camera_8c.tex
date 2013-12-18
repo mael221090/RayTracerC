@@ -1,0 +1,48 @@
+\hypertarget{camera_8c}{
+\section{src/camera.c File Reference}
+\label{camera_8c}\index{src/camera.c@{src/camera.c}}
+}
+{\ttfamily \#include \char`\"{}camera.h\char`\"{}}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$values.h$>$}\par
+{\ttfamily \#include \char`\"{}vecteur.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcamera__new}{camera\_\-new} \hyperlink{camera_8c_a38e276b30cb20d53e46396d364edf578}{creerCameraAvecViewplane} (\hyperlink{structcamera}{camera} cam)
+\begin{DoxyCompactList}\small\item\em fonction de création de la camera \item\end{DoxyCompactList}\item 
+void \hyperlink{camera_8c_a26f47002507e22d717d9045ed86fc65e}{calculPointHautGauche} (\hyperlink{structcamera__new}{camera\_\-new} $\ast$cam)
+\begin{DoxyCompactList}\small\item\em fonction qui calcul le point haut gauche du viewPlane \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{camera_8c_a26f47002507e22d717d9045ed86fc65e}{
+\index{camera.c@{camera.c}!calculPointHautGauche@{calculPointHautGauche}}
+\index{calculPointHautGauche@{calculPointHautGauche}!camera.c@{camera.c}}
+\subsubsection[{calculPointHautGauche}]{\setlength{\rightskip}{0pt plus 5cm}calculPointHautGauche ({\bf camera\_\-new} $\ast$ {\em cam})}}
+\label{camera_8c_a26f47002507e22d717d9045ed86fc65e}
+
+
+fonction qui calcul le point haut gauche du viewPlane 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cam}]: nouvelle camera avec viewplane \end{DoxyParams}
+\hypertarget{camera_8c_a38e276b30cb20d53e46396d364edf578}{
+\index{camera.c@{camera.c}!creerCameraAvecViewplane@{creerCameraAvecViewplane}}
+\index{creerCameraAvecViewplane@{creerCameraAvecViewplane}!camera.c@{camera.c}}
+\subsubsection[{creerCameraAvecViewplane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf camera\_\-new} creerCameraAvecViewplane ({\bf camera} {\em cam})}}
+\label{camera_8c_a38e276b30cb20d53e46396d364edf578}
+
+
+fonction de création de la camera 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cam}]: camera du fichier.pov \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la nouvelle camera avec le viewplane intégré 
+\end{DoxyReturn}

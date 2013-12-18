@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$structcylinder.html" title="structure définissant un cylindre" alt="" coords="5,157,72,187"/>
+<area shape="rect" href="$structvecteur.html" title="structure définissant un vecteur de taille 3" alt="" coords="407,5,471,35"/>
+<area shape="rect" href="$structcone.html" title="structure définissant un cone" alt="" coords="167,157,215,187"/>
+<area shape="rect" href="$structtriangle.html" title="structure définissant un triangle" alt="" coords="301,157,365,187"/>
+<area shape="rect" href="$structbox.html" title="structure définissant un cube" alt="" coords="421,157,464,187"/>
+<area shape="rect" href="$structplane.html" title="structure définissant un plan" alt="" coords="547,157,597,187"/>
+<area shape="rect" href="$structtorus.html" title="structure définissant un tore" alt="" coords="656,157,707,187"/>
+<area shape="rect" href="$structsphere.html" title="structure définissant une sphere" alt="" coords="773,157,832,187"/>
+</map>

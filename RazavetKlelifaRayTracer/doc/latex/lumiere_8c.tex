@@ -1,0 +1,38 @@
+\hypertarget{lumiere_8c}{
+\section{src/lumiere.c File Reference}
+\label{lumiere_8c}\index{src/lumiere.c@{src/lumiere.c}}
+}
+{\ttfamily \#include \char`\"{}lumiere.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}vecteur.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}LectureFichier.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}rayon.h\char`\"{}}\par
+{\ttfamily \#include $<$values.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{lumiere_8c_a7981faac020e1bedd1bbfbf25ab81882}{lumierePixel} (\hyperlink{structvecteur}{vecteur} normal, \hyperlink{structvecteur}{vecteur} intersection, \hyperlink{structvecteur}{vecteur} mat, \hyperlink{structlight__source}{light\_\-source} lumiere, \hyperlink{structvecteur}{vecteur} pigment)
+\begin{DoxyCompactList}\small\item\em calcul de la couleur d'un pixel \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{lumiere_8c_a7981faac020e1bedd1bbfbf25ab81882}{
+\index{lumiere.c@{lumiere.c}!lumierePixel@{lumierePixel}}
+\index{lumierePixel@{lumierePixel}!lumiere.c@{lumiere.c}}
+\subsubsection[{lumierePixel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} lumierePixel ({\bf vecteur} {\em normal}, \/  {\bf vecteur} {\em intersection}, \/  {\bf vecteur} {\em mat}, \/  {\bf light\_\-source} {\em lumiere}, \/  {\bf vecteur} {\em pigment})}}
+\label{lumiere_8c_a7981faac020e1bedd1bbfbf25ab81882}
+
+
+calcul de la couleur d'un pixel 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em normal}]: la normal a l'objet au pixel corespondant \item[{\em intersection}]: l'intersection entre le rayon et l'objet \item[{\em mat}]: la couleur du matériel \item[{\em lumiere}]: la lumiere du fichier.pov \item[{\em pigment}]: la couleur du pixel \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la nouvelle couleur du pixel 
+\end{DoxyReturn}
+
+
+pour la lumiere spéculaire qui n'est pas traité
+
+vecteur reflection;// declaration du vecteur reflechie float angleReflectionIntersection;//declaration de l'angle entre le vecteur reflechi et l'intersection vecteur resultSpec;//lumiere speculaire 
+

@@ -1,0 +1,253 @@
+\hypertarget{_lecture_fichier_8c}{
+\section{src/LectureFichier.c File Reference}
+\label{_lecture_fichier_8c}\index{src/LectureFichier.c@{src/LectureFichier.c}}
+}
+{\ttfamily \#include \char`\"{}LectureFichier.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_lecture_fichier_8c_a48d892c2591ab34218177bd8724605d5}{enleveEspace} (char $\ast$tab)
+\begin{DoxyCompactList}\small\item\em fonction permettant d'enlever les espaces d'une chaine de caractère \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_a9a5d411df1d64b3feac8ea5224ea4f82}{LectureFichier} (\hyperlink{structobjet}{objet} $\ast$obj, char $\ast$fichier, int tailleFichier, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg, \hyperlink{structliste_intersection}{listeIntersection} $\ast$lIntersection)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire le fichier .pov et de traiter les objets afin de les stocker dans des structures \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_aff24f85cc8e71bf6b0dd54ca1ea28076}{lireIntersection} (\hyperlink{structobjet}{objet} $\ast$obj, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate, \hyperlink{structliste_intersection}{listeIntersection} $\ast$lIntersection, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire une intersection \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_a0d719d97b43a62c71ecd2151a5a2b76e}{lireUnion} (\hyperlink{structobjet}{objet} $\ast$obj, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate, \hyperlink{structliste_union}{listeUnion} $\ast$lUnion, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire une union \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_a0686fa1c22b4d6368ce135dfb3920788}{lireDifference} (\hyperlink{structobjet}{objet} $\ast$obj, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate, \hyperlink{structliste_difference}{listeDifference} $\ast$lDifference, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire une difference \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_a9e32d628516eb3180918f980028ec527}{lireCamera} (\hyperlink{structobjet}{objet} $\ast$obj, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire une caméra \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_a34ce4cfe38b2eb654e26d0e4c0e4aeb4}{lireLightSource} (\hyperlink{structobjet}{objet} $\ast$obj, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire les lights sources \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_a9bce65e2c8e7febcd20d3a08eee4cc2b}{lireBackground} (\hyperlink{structobjet}{objet} $\ast$obj, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire background \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_ac2d54c542ac5c949fa13b96278346900}{lirePlan} (\hyperlink{structliste_plane}{listePlane} $\ast$nvPlan, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire un plan \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_ae5e133fbca529ee966d104adca0d7d43}{lireSphere} (\hyperlink{structliste_sphere}{listeSphere} $\ast$nvSphere, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire une sphere \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_a6388309c7e7e8d1cadfa823f7a8e8a61}{lireTriangle} (\hyperlink{structliste_triangle}{listeTriangle} $\ast$nvTriangle, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire un triangle \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_ae843dc21b7716e9682c5fc8bb7055024}{lireCube} (\hyperlink{structliste_box}{listeBox} $\ast$nvBoite, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire un cube \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_a7fb40e85063f848a60bd273a014e8cb9}{lireCylindre} (\hyperlink{structliste_cylinder}{listeCylinder} $\ast$nvCylindre, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire un cylindre \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_a8e3433cf03033978c0cec4f019daa095}{lireCone} (\hyperlink{structliste_cone}{listeCone} $\ast$nvCone, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire un cone \item\end{DoxyCompactList}\item 
+void \hyperlink{_lecture_fichier_8c_ad31fa99dd916a5979c96ae3d448617e6}{lireTore} (\hyperlink{structliste_torus}{listeTorus} $\ast$nvTore, char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate, \hyperlink{structobjet_c_s_g}{objetCSG} $\ast$objetcsg)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire un tore \item\end{DoxyCompactList}\item 
+\hyperlink{structliste_matrice}{listeMatrice} $\ast$ \hyperlink{_lecture_fichier_8c_ab916eccc89951b8c6694f623f8da9fd2}{getTransformation} (char $\ast$tabObj, int tailleFichier, int $\ast$i, char $\ast$fichier, \hyperlink{structliste_matrice}{listeMatrice} $\ast$liste, double $\ast$$\ast$matriceTranslate, double $\ast$$\ast$matriceScale, double $\ast$$\ast$matriceRotate)
+\begin{DoxyCompactList}\small\item\em fonction permettant de lire le fichier .pov et de traiter les objets afin de les stocker dans des structures \item\end{DoxyCompactList}\item 
+double $\ast$$\ast$ \hyperlink{_lecture_fichier_8c_a8c7ad1e78a7c0ec0d0ab29424dadd034}{initialiseMatrice} (\hyperlink{structliste_matrice}{listeMatrice} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em fonction permettant d'initialiser la matrice transformation d'un objet \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_lecture_fichier_8c_a48d892c2591ab34218177bd8724605d5}{
+\index{LectureFichier.c@{LectureFichier.c}!enleveEspace@{enleveEspace}}
+\index{enleveEspace@{enleveEspace}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{enleveEspace}]{\setlength{\rightskip}{0pt plus 5cm}void enleveEspace (char $\ast$ {\em tab})}}
+\label{_lecture_fichier_8c_a48d892c2591ab34218177bd8724605d5}
+
+
+fonction permettant d'enlever les espaces d'une chaine de caractère 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tab}]: chaine de caractère à traiter \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_ab916eccc89951b8c6694f623f8da9fd2}{
+\index{LectureFichier.c@{LectureFichier.c}!getTransformation@{getTransformation}}
+\index{getTransformation@{getTransformation}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{getTransformation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listeMatrice} $\ast$ getTransformation (char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate})}}
+\label{_lecture_fichier_8c_ab916eccc89951b8c6694f623f8da9fd2}
+
+
+fonction permettant de lire le fichier .pov et de traiter les objets afin de les stocker dans des structures 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]: indique la position de lecture du fichier \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em fichier}]: chaine de caractère à lire \item[{\em tailleFichier}]: taille du fichier \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_a8c7ad1e78a7c0ec0d0ab29424dadd034}{
+\index{LectureFichier.c@{LectureFichier.c}!initialiseMatrice@{initialiseMatrice}}
+\index{initialiseMatrice@{initialiseMatrice}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{initialiseMatrice}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$$\ast$ initialiseMatrice ({\bf listeMatrice} $\ast$ {\em liste})}}
+\label{_lecture_fichier_8c_a8c7ad1e78a7c0ec0d0ab29424dadd034}
+
+
+fonction permettant d'initialiser la matrice transformation d'un objet 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em liste}]: ma liste de matrice transformation \end{DoxyParams}
+
+
+ici on considère que l'utilisateur a rentrer un seul vecteur, par transformation donc on fera au maximum 3 produits
+
+\hypertarget{_lecture_fichier_8c_a9a5d411df1d64b3feac8ea5224ea4f82}{
+\index{LectureFichier.c@{LectureFichier.c}!LectureFichier@{LectureFichier}}
+\index{LectureFichier@{LectureFichier}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{LectureFichier}]{\setlength{\rightskip}{0pt plus 5cm}void LectureFichier ({\bf objet} $\ast$ {\em obj}, \/  char $\ast$ {\em fichier}, \/  int {\em tailleFichier}, \/  {\bf objetCSG} $\ast$ {\em objetcsg}, \/  {\bf listeIntersection} $\ast$ {\em lIntersection})}}
+\label{_lecture_fichier_8c_a9a5d411df1d64b3feac8ea5224ea4f82}
+
+
+fonction permettant de lire le fichier .pov et de traiter les objets afin de les stocker dans des structures 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj}]: structure de liste d'objet \item[{\em fichier}]: chaine de caractère à lire \item[{\em tailleFichier}]: taille du fichier \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \item[{\em lIntersection}]: liste d'intersection \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_a9bce65e2c8e7febcd20d3a08eee4cc2b}{
+\index{LectureFichier.c@{LectureFichier.c}!lireBackground@{lireBackground}}
+\index{lireBackground@{lireBackground}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireBackground}]{\setlength{\rightskip}{0pt plus 5cm}lireBackground ({\bf objet} $\ast$ {\em obj}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier})}}
+\label{_lecture_fichier_8c_a9bce65e2c8e7febcd20d3a08eee4cc2b}
+
+
+fonction permettant de lire background 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj,:}]structure de liste d'objets \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_a9e32d628516eb3180918f980028ec527}{
+\index{LectureFichier.c@{LectureFichier.c}!lireCamera@{lireCamera}}
+\index{lireCamera@{lireCamera}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireCamera}]{\setlength{\rightskip}{0pt plus 5cm}lireCamera ({\bf objet} $\ast$ {\em obj}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier})}}
+\label{_lecture_fichier_8c_a9e32d628516eb3180918f980028ec527}
+
+
+fonction permettant de lire une caméra 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj,:}]structure de liste d'objets \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_a8e3433cf03033978c0cec4f019daa095}{
+\index{LectureFichier.c@{LectureFichier.c}!lireCone@{lireCone}}
+\index{lireCone@{lireCone}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireCone}]{\setlength{\rightskip}{0pt plus 5cm}lireCone ({\bf listeCone} $\ast$ {\em nvCone}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate}, \/  {\bf objetCSG} $\ast$ {\em objetcsg})}}
+\label{_lecture_fichier_8c_a8e3433cf03033978c0cec4f019daa095}
+
+
+fonction permettant de lire un cone 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nvCone,:}]liste de cone \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_ae843dc21b7716e9682c5fc8bb7055024}{
+\index{LectureFichier.c@{LectureFichier.c}!lireCube@{lireCube}}
+\index{lireCube@{lireCube}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireCube}]{\setlength{\rightskip}{0pt plus 5cm}lireCube ({\bf listeBox} $\ast$ {\em nvBoite}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate}, \/  {\bf objetCSG} $\ast$ {\em objetcsg})}}
+\label{_lecture_fichier_8c_ae843dc21b7716e9682c5fc8bb7055024}
+
+
+fonction permettant de lire un cube 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nvBoite,:}]liste de cube \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_a7fb40e85063f848a60bd273a014e8cb9}{
+\index{LectureFichier.c@{LectureFichier.c}!lireCylindre@{lireCylindre}}
+\index{lireCylindre@{lireCylindre}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireCylindre}]{\setlength{\rightskip}{0pt plus 5cm}lireCylindre ({\bf listeCylinder} $\ast$ {\em nvCylindre}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate}, \/  {\bf objetCSG} $\ast$ {\em objetcsg})}}
+\label{_lecture_fichier_8c_a7fb40e85063f848a60bd273a014e8cb9}
+
+
+fonction permettant de lire un cylindre 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nvCylindre,:}]liste de cylindre \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_a0686fa1c22b4d6368ce135dfb3920788}{
+\index{LectureFichier.c@{LectureFichier.c}!lireDifference@{lireDifference}}
+\index{lireDifference@{lireDifference}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireDifference}]{\setlength{\rightskip}{0pt plus 5cm}lireDifference ({\bf objet} $\ast$ {\em obj}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate}, \/  {\bf listeDifference} $\ast$ {\em lDifference}, \/  {\bf objetCSG} $\ast$ {\em objetcsg})}}
+\label{_lecture_fichier_8c_a0686fa1c22b4d6368ce135dfb3920788}
+
+
+fonction permettant de lire une difference 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj,:}]structure de liste d'objets \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \item[{\em lDifference}]: liste dde difference \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_aff24f85cc8e71bf6b0dd54ca1ea28076}{
+\index{LectureFichier.c@{LectureFichier.c}!lireIntersection@{lireIntersection}}
+\index{lireIntersection@{lireIntersection}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireIntersection}]{\setlength{\rightskip}{0pt plus 5cm}lireIntersection ({\bf objet} $\ast$ {\em obj}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate}, \/  {\bf listeIntersection} $\ast$ {\em lIntersection}, \/  {\bf objetCSG} $\ast$ {\em objetcsg})}}
+\label{_lecture_fichier_8c_aff24f85cc8e71bf6b0dd54ca1ea28076}
+
+
+fonction permettant de lire une intersection 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj,:}]structure de liste d'objets \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \item[{\em lIntersection}]: liste d'intersection \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_a34ce4cfe38b2eb654e26d0e4c0e4aeb4}{
+\index{LectureFichier.c@{LectureFichier.c}!lireLightSource@{lireLightSource}}
+\index{lireLightSource@{lireLightSource}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireLightSource}]{\setlength{\rightskip}{0pt plus 5cm}lireLightSource ({\bf objet} $\ast$ {\em obj}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier})}}
+\label{_lecture_fichier_8c_a34ce4cfe38b2eb654e26d0e4c0e4aeb4}
+
+
+fonction permettant de lire les lights sources 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj,:}]structure de liste d'objets \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_ac2d54c542ac5c949fa13b96278346900}{
+\index{LectureFichier.c@{LectureFichier.c}!lirePlan@{lirePlan}}
+\index{lirePlan@{lirePlan}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lirePlan}]{\setlength{\rightskip}{0pt plus 5cm}lirePlan ({\bf listePlane} $\ast$ {\em nvPlan}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate}, \/  {\bf objetCSG} $\ast$ {\em objetcsg})}}
+\label{_lecture_fichier_8c_ac2d54c542ac5c949fa13b96278346900}
+
+
+fonction permettant de lire un plan 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nvPlan,:}]liste de plan \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_ae5e133fbca529ee966d104adca0d7d43}{
+\index{LectureFichier.c@{LectureFichier.c}!lireSphere@{lireSphere}}
+\index{lireSphere@{lireSphere}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireSphere}]{\setlength{\rightskip}{0pt plus 5cm}lireSphere ({\bf listeSphere} $\ast$ {\em nvSphere}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate}, \/  {\bf objetCSG} $\ast$ {\em objetcsg})}}
+\label{_lecture_fichier_8c_ae5e133fbca529ee966d104adca0d7d43}
+
+
+fonction permettant de lire une sphere 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nvSphere,:}]liste de sphere \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_ad31fa99dd916a5979c96ae3d448617e6}{
+\index{LectureFichier.c@{LectureFichier.c}!lireTore@{lireTore}}
+\index{lireTore@{lireTore}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireTore}]{\setlength{\rightskip}{0pt plus 5cm}lireTore ({\bf listeTorus} $\ast$ {\em nvTore}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate}, \/  {\bf objetCSG} $\ast$ {\em objetcsg})}}
+\label{_lecture_fichier_8c_ad31fa99dd916a5979c96ae3d448617e6}
+
+
+fonction permettant de lire un tore 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nvTore,:}]liste de tore \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_a6388309c7e7e8d1cadfa823f7a8e8a61}{
+\index{LectureFichier.c@{LectureFichier.c}!lireTriangle@{lireTriangle}}
+\index{lireTriangle@{lireTriangle}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireTriangle}]{\setlength{\rightskip}{0pt plus 5cm}lireTriangle ({\bf listeTriangle} $\ast$ {\em nvTriangle}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate}, \/  {\bf objetCSG} $\ast$ {\em objetcsg})}}
+\label{_lecture_fichier_8c_a6388309c7e7e8d1cadfa823f7a8e8a61}
+
+
+fonction permettant de lire un triangle 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nvTriangle,:}]liste de triangle \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \end{DoxyParams}
+\hypertarget{_lecture_fichier_8c_a0d719d97b43a62c71ecd2151a5a2b76e}{
+\index{LectureFichier.c@{LectureFichier.c}!lireUnion@{lireUnion}}
+\index{lireUnion@{lireUnion}!LectureFichier.c@{LectureFichier.c}}
+\subsubsection[{lireUnion}]{\setlength{\rightskip}{0pt plus 5cm}lireUnion ({\bf objet} $\ast$ {\em obj}, \/  char $\ast$ {\em tabObj}, \/  int {\em tailleFichier}, \/  int $\ast$ {\em i}, \/  char $\ast$ {\em fichier}, \/  {\bf listeMatrice} $\ast$ {\em liste}, \/  double $\ast$$\ast$ {\em matriceTranslate}, \/  double $\ast$$\ast$ {\em matriceScale}, \/  double $\ast$$\ast$ {\em matriceRotate}, \/  {\bf listeUnion} $\ast$ {\em lUnion}, \/  {\bf objetCSG} $\ast$ {\em objetcsg})}}
+\label{_lecture_fichier_8c_a0d719d97b43a62c71ecd2151a5a2b76e}
+
+
+fonction permettant de lire une union 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em obj,:}]structure de liste d'objets \item[{\em tabObj}]: chaine de caractere servant à stocker les caractères du ficher \item[{\em tailleFichier}]: taille du fichier \item[{\em i}]: indique la position de lecture du fichier \item[{\em fichier}]: chaine de caractère à lire \item[{\em liste}]: ma liste de matrice transformation \item[{\em matriceTranslate}]: la matrice translation \item[{\em matriceScale}]: la matrice Scale \item[{\em matriceRotate}]: la matrice Rotation \item[{\em lUnion}]: liste d'union \item[{\em objetcsg}]: structure dobjet ayant une csg de définie \end{DoxyParams}

@@ -1,0 +1,261 @@
+\hypertarget{transformation_8h}{
+\section{src/transformation.h File Reference}
+\label{transformation_8h}\index{src/transformation.h@{src/transformation.h}}
+}
+{\ttfamily \#include \char`\"{}vecteur.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structliste_matrice}{listeMatrice}
+\begin{DoxyCompactList}\small\item\em structure définissant une liste de lumiere \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structliste_matrice}{listeMatrice} \hyperlink{transformation_8h_ab1657bf5a27e375b5e86ff78b790bed1}{listeMatrice}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$$\ast$ \hyperlink{transformation_8h_a88221adcd3630d8a3fdcb5d4de827ae0}{transposer} (double $\ast$$\ast$matrice)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de calculer la transposer d'une matrice. \item\end{DoxyCompactList}\item 
+int \hyperlink{transformation_8h_aafc98948a6d512353eadfed006936345}{compareMatrice} (double $\ast$$\ast$matrice1, double $\ast$$\ast$matrice2)
+\begin{DoxyCompactList}\small\item\em Fonction qui compare deux matrices entre elles. \item\end{DoxyCompactList}\item 
+\hyperlink{structliste_matrice}{listeMatrice} $\ast$ \hyperlink{transformation_8h_a47b59a57875ac2f98b2b64c432a8fda2}{ajouterEnTete} (\hyperlink{structliste_matrice}{listeMatrice} $\ast$l, double $\ast$$\ast$$\ast$valeur)
+\begin{DoxyCompactList}\small\item\em fonction qui ajoute une matrice en tete d'une liste \item\end{DoxyCompactList}\item 
+double $\ast$$\ast$ \hyperlink{transformation_8h_aa02ba0cc93e6d4a11309ff440c43010a}{transformation} (int typeTransfo, \hyperlink{structvecteur}{vecteur} vecteurTransfo)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de calculer la matrice transformation associer a un objet. \item\end{DoxyCompactList}\item 
+double $\ast$$\ast$ \hyperlink{transformation_8h_abf0b48690269aabc13431a3ed5afa575}{creerMatrice} (int n)
+\begin{DoxyCompactList}\small\item\em Fonction qui creer une matrice. \item\end{DoxyCompactList}\item 
+double $\ast$$\ast$ \hyperlink{transformation_8h_a1f8d0f92957bb83abe6f42d5a054eb80}{produitMatricielle} (double $\ast$$\ast$pmatrice, double $\ast$$\ast$dmatrice, int n)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de calculer le produit matricielle entre deux matrices. \item\end{DoxyCompactList}\item 
+void \hyperlink{transformation_8h_a324df9156c8c7f85b737c7e9b3c5cfa9}{afficheMatrice} (double $\ast$$\ast$matrice, int n)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d'afficher une matrice. \item\end{DoxyCompactList}\item 
+double $\ast$$\ast$ \hyperlink{transformation_8h_a5caf907c1fd4974783fde47b9229e786}{remplitMatrice} (double $\ast$$\ast$matrice, int n)
+\begin{DoxyCompactList}\small\item\em Fonction qui remplit une matrice de zéro. \item\end{DoxyCompactList}\item 
+double $\ast$$\ast$ \hyperlink{transformation_8h_ae0eb4781fc00377480ddfcfb4e3c750a}{matriceIdentite} (double $\ast$$\ast$matriceTransfo, int n)
+\begin{DoxyCompactList}\small\item\em Fonction qui initialise une matrice identitée. \item\end{DoxyCompactList}\item 
+double $\ast$$\ast$ \hyperlink{transformation_8h_a373ade4a78f252e249d2a29b8f9f16b9}{sousMatrice} (double $\ast$$\ast$matrice, int k, int l, int n)
+\begin{DoxyCompactList}\small\item\em Fonction qui calcule la sous matrice d'une matrice. \item\end{DoxyCompactList}\item 
+double $\ast$$\ast$ \hyperlink{transformation_8h_ad7b2533a88eabec9179cc7937f546902}{matriceInverse} (double $\ast$$\ast$matrice, int n)
+\begin{DoxyCompactList}\small\item\em Fonction qui calcul la matrice inverse d'une matrice. \item\end{DoxyCompactList}\item 
+double \hyperlink{transformation_8h_ad7ca284f47d313117d1b0bdb9406be4a}{determinant} (double $\ast$$\ast$matrice, int n)
+\begin{DoxyCompactList}\small\item\em Fonction qui calcul le déterminant. \item\end{DoxyCompactList}\item 
+\hyperlink{structvecteur4}{vecteur4} \hyperlink{transformation_8h_a88cb4e4ae6abd63781c21c995c69dea2}{produitMatriceNonCarree} (double $\ast$$\ast$pmatrice, \hyperlink{structvecteur4}{vecteur4} \hyperlink{structvecteur}{vecteur}, int n)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de calculer le produit matricielle entre deux matrices. \item\end{DoxyCompactList}\item 
+void \hyperlink{transformation_8h_a532afac4aa627489da610bd903d2f5fc}{libereMatrice} (double $\ast$$\ast$matrice, int n)
+\begin{DoxyCompactList}\small\item\em Fonction qui libere une matrice en mémoire. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{transformation_8h_ab1657bf5a27e375b5e86ff78b790bed1}{
+\index{transformation.h@{transformation.h}!listeMatrice@{listeMatrice}}
+\index{listeMatrice@{listeMatrice}!transformation.h@{transformation.h}}
+\subsubsection[{listeMatrice}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf listeMatrice} {\bf listeMatrice}}}
+\label{transformation_8h_ab1657bf5a27e375b5e86ff78b790bed1}
+
+
+\subsection{Function Documentation}
+\hypertarget{transformation_8h_a324df9156c8c7f85b737c7e9b3c5cfa9}{
+\index{transformation.h@{transformation.h}!afficheMatrice@{afficheMatrice}}
+\index{afficheMatrice@{afficheMatrice}!transformation.h@{transformation.h}}
+\subsubsection[{afficheMatrice}]{\setlength{\rightskip}{0pt plus 5cm}void afficheMatrice (double $\ast$$\ast$ {\em matrice}, \/  int {\em n})}}
+\label{transformation_8h_a324df9156c8c7f85b737c7e9b3c5cfa9}
+
+
+Fonction qui permet d'afficher une matrice. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em matrice}]matrice a afficher \item[{\em n}]taille de la matrice a afficher \end{DoxyParams}
+\hypertarget{transformation_8h_a47b59a57875ac2f98b2b64c432a8fda2}{
+\index{transformation.h@{transformation.h}!ajouterEnTete@{ajouterEnTete}}
+\index{ajouterEnTete@{ajouterEnTete}!transformation.h@{transformation.h}}
+\subsubsection[{ajouterEnTete}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listeMatrice}$\ast$ ajouterEnTete ({\bf listeMatrice} $\ast$ {\em l}, \/  double $\ast$$\ast$$\ast$ {\em valeur})}}
+\label{transformation_8h_a47b59a57875ac2f98b2b64c432a8fda2}
+
+
+fonction qui ajoute une matrice en tete d'une liste 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em l}]la liste a laquelle on veut ajouter la matrice \item[{\em valeur}]la matrice a ajouter \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la liste modifiee 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_aafc98948a6d512353eadfed006936345}{
+\index{transformation.h@{transformation.h}!compareMatrice@{compareMatrice}}
+\index{compareMatrice@{compareMatrice}!transformation.h@{transformation.h}}
+\subsubsection[{compareMatrice}]{\setlength{\rightskip}{0pt plus 5cm}int compareMatrice (double $\ast$$\ast$ {\em matrice1}, \/  double $\ast$$\ast$ {\em matrice2})}}
+\label{transformation_8h_aafc98948a6d512353eadfed006936345}
+
+
+Fonction qui compare deux matrices entre elles. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em matrice1}]première matrice que l'on veut comparer \item[{\em matrice2}]seconde matrice que l'on veut comparer\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+renvoit 1 si ce sont les même, 0 sinon 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_abf0b48690269aabc13431a3ed5afa575}{
+\index{transformation.h@{transformation.h}!creerMatrice@{creerMatrice}}
+\index{creerMatrice@{creerMatrice}!transformation.h@{transformation.h}}
+\subsubsection[{creerMatrice}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ creerMatrice (int {\em n})}}
+\label{transformation_8h_abf0b48690269aabc13431a3ed5afa575}
+
+
+Fonction qui creer une matrice. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em n}]taille de la matrice \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la matrice identité 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_ad7ca284f47d313117d1b0bdb9406be4a}{
+\index{transformation.h@{transformation.h}!determinant@{determinant}}
+\index{determinant@{determinant}!transformation.h@{transformation.h}}
+\subsubsection[{determinant}]{\setlength{\rightskip}{0pt plus 5cm}double determinant (double $\ast$$\ast$ {\em matrice}, \/  int {\em n})}}
+\label{transformation_8h_ad7ca284f47d313117d1b0bdb9406be4a}
+
+
+Fonction qui calcul le déterminant. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em matrice}]: matrice dont on veut calculer le determinant \item[{\em n}]taille de la matrice \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la matrice inverse 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_a532afac4aa627489da610bd903d2f5fc}{
+\index{transformation.h@{transformation.h}!libereMatrice@{libereMatrice}}
+\index{libereMatrice@{libereMatrice}!transformation.h@{transformation.h}}
+\subsubsection[{libereMatrice}]{\setlength{\rightskip}{0pt plus 5cm}void libereMatrice (double $\ast$$\ast$ {\em matrice}, \/  int {\em n})}}
+\label{transformation_8h_a532afac4aa627489da610bd903d2f5fc}
+
+
+Fonction qui libere une matrice en mémoire. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em matrice}]: matrice dont on veut liberer la mémoire \item[{\em n}]taille de la matrice \end{DoxyParams}
+\hypertarget{transformation_8h_ae0eb4781fc00377480ddfcfb4e3c750a}{
+\index{transformation.h@{transformation.h}!matriceIdentite@{matriceIdentite}}
+\index{matriceIdentite@{matriceIdentite}!transformation.h@{transformation.h}}
+\subsubsection[{matriceIdentite}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ matriceIdentite (double $\ast$$\ast$ {\em matriceTransfo}, \/  int {\em n})}}
+\label{transformation_8h_ae0eb4781fc00377480ddfcfb4e3c750a}
+
+
+Fonction qui initialise une matrice identitée. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em matriceTransfo}]: matrice a remplir \item[{\em n}]taille de la matrice \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la matrice identité 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_ad7b2533a88eabec9179cc7937f546902}{
+\index{transformation.h@{transformation.h}!matriceInverse@{matriceInverse}}
+\index{matriceInverse@{matriceInverse}!transformation.h@{transformation.h}}
+\subsubsection[{matriceInverse}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ matriceInverse (double $\ast$$\ast$ {\em matrice}, \/  int {\em n})}}
+\label{transformation_8h_ad7b2533a88eabec9179cc7937f546902}
+
+
+Fonction qui calcul la matrice inverse d'une matrice. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em matrice}]: matrice dont on veut calculer la matrice inverse \item[{\em n}]taille de la matrice \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la matrice inverse 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_a88cb4e4ae6abd63781c21c995c69dea2}{
+\index{transformation.h@{transformation.h}!produitMatriceNonCarree@{produitMatriceNonCarree}}
+\index{produitMatriceNonCarree@{produitMatriceNonCarree}!transformation.h@{transformation.h}}
+\subsubsection[{produitMatriceNonCarree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur4} produitMatriceNonCarree (double $\ast$$\ast$ {\em pmatrice}, \/  {\bf vecteur4} {\em vecteur}, \/  int {\em n})}}
+\label{transformation_8h_a88cb4e4ae6abd63781c21c995c69dea2}
+
+
+Fonction qui permet de calculer le produit matricielle entre deux matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pmatrice}]première matrice dont on veut faire le produit \item[{\em vecteur}]dont on veut faire le produit \item[{\em n}]taille de la matrice\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la matrice résultat du produit entre le vecteur et la matrice 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_a1f8d0f92957bb83abe6f42d5a054eb80}{
+\index{transformation.h@{transformation.h}!produitMatricielle@{produitMatricielle}}
+\index{produitMatricielle@{produitMatricielle}!transformation.h@{transformation.h}}
+\subsubsection[{produitMatricielle}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ produitMatricielle (double $\ast$$\ast$ {\em pmatrice}, \/  double $\ast$$\ast$ {\em dmatrice}, \/  int {\em n})}}
+\label{transformation_8h_a1f8d0f92957bb83abe6f42d5a054eb80}
+
+
+Fonction qui permet de calculer le produit matricielle entre deux matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pmatrice}]première matrice dont on veut faire le produit \item[{\em dmatrice}]seconde matrice dont on veut faire le produit \item[{\em n}]taille de la matrice\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la matrice résultat du produit matricielle 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_a5caf907c1fd4974783fde47b9229e786}{
+\index{transformation.h@{transformation.h}!remplitMatrice@{remplitMatrice}}
+\index{remplitMatrice@{remplitMatrice}!transformation.h@{transformation.h}}
+\subsubsection[{remplitMatrice}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ remplitMatrice (double $\ast$$\ast$ {\em matrice}, \/  int {\em n})}}
+\label{transformation_8h_a5caf907c1fd4974783fde47b9229e786}
+
+
+Fonction qui remplit une matrice de zéro. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em matrice}]a remplir \item[{\em n}]taille de la matrice \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la matrice remplit de zéro 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_a373ade4a78f252e249d2a29b8f9f16b9}{
+\index{transformation.h@{transformation.h}!sousMatrice@{sousMatrice}}
+\index{sousMatrice@{sousMatrice}!transformation.h@{transformation.h}}
+\subsubsection[{sousMatrice}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ sousMatrice (double $\ast$$\ast$ {\em matrice}, \/  int {\em k}, \/  int {\em l}, \/  int {\em n})}}
+\label{transformation_8h_a373ade4a78f252e249d2a29b8f9f16b9}
+
+
+Fonction qui calcule la sous matrice d'une matrice. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em matrice}]: matrice dont on veut la sous matrice \item[{\em n}]: taille de la matrice \item[{\em k}]: indice de ligne \item[{\em l}]: indice de colonne \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sous matrice correspondante 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_aa02ba0cc93e6d4a11309ff440c43010a}{
+\index{transformation.h@{transformation.h}!transformation@{transformation}}
+\index{transformation@{transformation}!transformation.h@{transformation.h}}
+\subsubsection[{transformation}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ transformation (int {\em typeTransfo}, \/  {\bf vecteur} {\em vecteurTransfo})}}
+\label{transformation_8h_aa02ba0cc93e6d4a11309ff440c43010a}
+
+
+Fonction qui permet de calculer la matrice transformation associer a un objet. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em typeTransfo}]entier indiquant quel est le type de transformation(scale, rotate ou translate) \item[{\em vecteurTransfo}]vecteur contenant les coordonnées de la transformation\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la matrice transformation 
+\end{DoxyReturn}
+\hypertarget{transformation_8h_a88221adcd3630d8a3fdcb5d4de827ae0}{
+\index{transformation.h@{transformation.h}!transposer@{transposer}}
+\index{transposer@{transposer}!transformation.h@{transformation.h}}
+\subsubsection[{transposer}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ transposer (double $\ast$$\ast$ {\em matrice})}}
+\label{transformation_8h_a88221adcd3630d8a3fdcb5d4de827ae0}
+
+
+Fonction qui permet de calculer la transposer d'une matrice. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em matrice}]: matrice que l'on veut transposer\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la transposer de la matrice 
+\end{DoxyReturn}

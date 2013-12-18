@@ -1,0 +1,32 @@
+	Comment utiliser notre Raytracer?
+
+Toutes les commandes sont à éxecuter à la racine du projet.
+
+Pour pouvoir lancer le programme, il suffit de taper la commande "make very-clean" puis, la commande "make". A noter que la commande make permet de compiler. Puis, pour exécuter le programme, il faut taper la commande:
+
+	./bin/raytracer ./[Dossier contenant le .pov]/[nom_Fichier.pov] [RESOLUTION]
+	
+Pour changer changer la résolution de l'image, il faut rentrer la nouvelle largeur suivit de la nouvelle longueur.
+	
+Donc, par exemple, pour exécuter le fichier siteduzero.pov contenu dans le dossier FichiersPov (à la racine du projet) avec une résolution de 800x600, nous devons taper:
+
+	./bin/raytracer ./FichiersPov/siteduzero.pov 800 600	
+	
+A noter que si le fichier siteduzero.pov se trouvait à la racine du projet et non dans un dossier, il suffirait de taper la commande suivante:
+
+	./bin/raytracer siteduzero.pov 800 600	
+	
+Ensuite, pour visualiser l'image finale, il suffit de taper la commande:
+
+	make open
+	
+Cela ouvrira l'image nommée ImageFinale.ppm à la racine du projet.		
+
+
+Pour pouvoir lancer la javadoc, il faut rentrer la commande "make documentation".
+
+
+Qu'est-ce que le programme ne prend pas en compte ou prend mal en compte:
+
+Les intersections, unions et différence ne sont pas prises en compte de manière complète. En effet, l'union n'est pas du tout prise en compte. Par contre, l'intersection entre deux objets (mêmes primitives ou différentes) est prise en compte mais on ne peut pas faire l'intersection de plus de deux objets. Concernant la différence, il est possible d'en faire une sur deux objets mais de primitives différentes. Cependant, on ne peut pas faire de scale, rotate ou translate sur toute une différence ou intersection.
+

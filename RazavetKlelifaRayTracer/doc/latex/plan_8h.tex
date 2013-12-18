@@ -1,0 +1,30 @@
+\hypertarget{plan_8h}{
+\section{src/plan.h File Reference}
+\label{plan_8h}\index{src/plan.h@{src/plan.h}}
+}
+{\ttfamily \#include \char`\"{}LectureFichier.h\char`\"{}}\par
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include \char`\"{}rayon.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{plan_8h_a93b6b5d78aca31fcaf024e2818f73d1e}{intersectPlan} (\hyperlink{structrayon}{rayon} ray, \hyperlink{structplane}{plane} $\ast$p, float $\ast$t, \hyperlink{structvecteur}{vecteur} $\ast$intersectPlan, \hyperlink{structvecteur}{vecteur} $\ast$normale)
+\begin{DoxyCompactList}\small\item\em fonction d'intersection entre plan et rayon \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{plan_8h_a93b6b5d78aca31fcaf024e2818f73d1e}{
+\index{plan.h@{plan.h}!intersectPlan@{intersectPlan}}
+\index{intersectPlan@{intersectPlan}!plan.h@{plan.h}}
+\subsubsection[{intersectPlan}]{\setlength{\rightskip}{0pt plus 5cm}int intersectPlan ({\bf rayon} {\em ray}, \/  {\bf plane} $\ast$ {\em p}, \/  float $\ast$ {\em t}, \/  {\bf vecteur} $\ast$ {\em intersectPlan}, \/  {\bf vecteur} $\ast$ {\em normale})}}
+\label{plan_8h_a93b6b5d78aca31fcaf024e2818f73d1e}
+
+
+fonction d'intersection entre plan et rayon 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ray}]: le rayon lancer \item[{\em p}]: le plan courant \item[{\em t}]: \item[{\em intersectPlan}]: point d'intersection entre le plan et le rayon \item[{\em normale}]: la normale au cylindre \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+booleen indiquant si il y a eu intersection 
+\end{DoxyReturn}

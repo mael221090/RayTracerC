@@ -1,0 +1,76 @@
+\hypertarget{structplane}{
+\section{plane Struct Reference}
+\label{structplane}\index{plane@{plane}}
+}
+
+
+structure définissant un plan  
+
+
+
+
+{\ttfamily \#include $<$LectureFichier.h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{structplane_a5a4ee24431a1811fa1c8b75844198987}{pigment}
+\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{structplane_ae655d799d0a983ee8cf5fc840953c404}{location}
+\item 
+float \hyperlink{structplane_a06f14a9abd47b91465f895d5259cdc1b}{distance}
+\item 
+double $\ast$$\ast$ \hyperlink{structplane_aa06ccc348007e3355beccf412f2f656c}{matriceTransfo}
+\item 
+double $\ast$$\ast$ \hyperlink{structplane_acd7a3590501dcccfaefccbb658f83821}{matriceTransfoInverse}
+\item 
+int \hyperlink{structplane_a4428e32d4383f7dee25e5a4cb192da24}{booleenCSG}
+\item 
+\hyperlink{structvecteur}{vecteur} \hyperlink{structplane_a944738f40a0294270a0047acc5a77ee2}{normale}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+structure définissant un plan 
+
+\subsection{Field Documentation}
+\hypertarget{structplane_a4428e32d4383f7dee25e5a4cb192da24}{
+\index{plane@{plane}!booleenCSG@{booleenCSG}}
+\index{booleenCSG@{booleenCSG}!plane@{plane}}
+\subsubsection[{booleenCSG}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf booleenCSG}}}
+\label{structplane_a4428e32d4383f7dee25e5a4cb192da24}
+int booleenCSG pour définir si il y a une csg et laquelle c'est \hypertarget{structplane_a06f14a9abd47b91465f895d5259cdc1b}{
+\index{plane@{plane}!distance@{distance}}
+\index{distance@{distance}!plane@{plane}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf distance}}}
+\label{structplane_a06f14a9abd47b91465f895d5259cdc1b}
+struct distance entre le plan et le sol \hypertarget{structplane_ae655d799d0a983ee8cf5fc840953c404}{
+\index{plane@{plane}!location@{location}}
+\index{location@{location}!plane@{plane}}
+\subsubsection[{location}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} {\bf location}}}
+\label{structplane_ae655d799d0a983ee8cf5fc840953c404}
+struct vecteur de position du plan \hypertarget{structplane_aa06ccc348007e3355beccf412f2f656c}{
+\index{plane@{plane}!matriceTransfo@{matriceTransfo}}
+\index{matriceTransfo@{matriceTransfo}!plane@{plane}}
+\subsubsection[{matriceTransfo}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ {\bf matriceTransfo}}}
+\label{structplane_aa06ccc348007e3355beccf412f2f656c}
+struct matrice de transformation \hypertarget{structplane_acd7a3590501dcccfaefccbb658f83821}{
+\index{plane@{plane}!matriceTransfoInverse@{matriceTransfoInverse}}
+\index{matriceTransfoInverse@{matriceTransfoInverse}!plane@{plane}}
+\subsubsection[{matriceTransfoInverse}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ {\bf matriceTransfoInverse}}}
+\label{structplane_acd7a3590501dcccfaefccbb658f83821}
+struct matrice de transformation inverse \hypertarget{structplane_a944738f40a0294270a0047acc5a77ee2}{
+\index{plane@{plane}!normale@{normale}}
+\index{normale@{normale}!plane@{plane}}
+\subsubsection[{normale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} {\bf normale}}}
+\label{structplane_a944738f40a0294270a0047acc5a77ee2}
+struct normale a la face intersecter \hypertarget{structplane_a5a4ee24431a1811fa1c8b75844198987}{
+\index{plane@{plane}!pigment@{pigment}}
+\index{pigment@{pigment}!plane@{plane}}
+\subsubsection[{pigment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vecteur} {\bf pigment}}}
+\label{structplane_a5a4ee24431a1811fa1c8b75844198987}
+struct vecteur indiquant la couleur du plan 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_lecture_fichier_8h}{LectureFichier.h}\end{DoxyCompactItemize}
